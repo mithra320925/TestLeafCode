@@ -25,10 +25,8 @@ public class TC001 {
 		driver.findElementByLinkText("Search for Vendor").click();
 		driver.findElementById("vendorName").sendKeys("Blue Lagoon");
 		driver.findElementById("buttonSearch").click();
-
 		String text = driver.findElementByXPath("//tr[2]/td[5]").getText();
 		System.out.println("Country is " + text);
-
 		driver.findElementByLinkText("Log Out").click();
 		driver.close();
 
