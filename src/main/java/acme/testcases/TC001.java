@@ -15,7 +15,7 @@ public class TC001 {
 		ChromeDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://acme-test.uipath.com/account/login");
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.findElementById("email").sendKeys("kumar.testleaf@gmail.com");
 		driver.findElementById("password").sendKeys("leaf@12");
 		driver.findElementById("buttonLogin").click();
